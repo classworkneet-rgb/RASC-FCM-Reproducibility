@@ -1,0 +1,16 @@
+{
+  "selected": {
+    "fedprox": {
+      "mu": 0.01
+    },
+    "scaffold": {
+      "server_lr": 3.0
+    },
+    "fedadam": {
+      "server_lr": 0.1
+    },
+    "fedyogi": {
+      "server_lr": 0.1
+    }
+  }
+}
