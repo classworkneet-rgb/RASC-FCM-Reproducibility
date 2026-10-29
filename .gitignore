@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+data/*.npz
+data/raw/
+results/runs/*.npz
+results/reference_predictions.npz

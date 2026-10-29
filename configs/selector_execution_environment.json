@@ -1,0 +1,14 @@
+{
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "scikit_learn": "1.8.0",
+  "pandas": "2.2.3",
+  "matplotlib": "3.10.8",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "workers": 4,
+  "blas_threads": 1,
+  "selector_test_runs": 100,
+  "reference_interface_retraining_checks": 2,
+  "feature_ranking_timing": "Mask construction excluded from per-run training/validation runtime, consistent with the reference benchmark"
+}

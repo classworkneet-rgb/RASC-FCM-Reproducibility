@@ -1,0 +1,145 @@
+{
+  "primary_dataset": "bot_primary",
+  "seeds": [
+    104729,
+    130363,
+    155921,
+    196613,
+    216091,
+    262147,
+    300007,
+    350377,
+    399989,
+    448451
+  ],
+  "tuning_seeds": [
+    200003,
+    200009,
+    200017
+  ],
+  "shared_training": {
+    "rounds": 40,
+    "steps": 6,
+    "batch": 768,
+    "local_lr": 0.003,
+    "weight_decay": 1e-05,
+    "rbm_epochs": 1,
+    "rbm_lr": 0.003
+  },
+  "mask": {
+    "bootstraps": 8,
+    "support_cap": 256,
+    "beta": 0.75,
+    "weight_cap": 4,
+    "reserved_per_supported_class": 1,
+    "minimum_global_support": 8,
+    "primary_budget": 22
+  },
+  "tuning": {
+    "mask": "full",
+    "validation_only": true,
+    "grids": {
+      "fedprox_mu": [
+        0.01,
+        0.1,
+        1.0
+      ],
+      "scaffold_server_lr": [
+        0.3,
+        1.0,
+        3.0
+      ],
+      "fedadam_server_lr": [
+        0.001,
+        0.01,
+        0.1
+      ],
+      "fedyogi_server_lr": [
+        0.001,
+        0.01,
+        0.1
+      ]
+    },
+    "selection": "highest mean validation macro F1 across 3 tuning seeds; tie uses earlier grid entry"
+  },
+  "scaffold": {
+    "option": "II",
+    "uniform_server_weighting": true,
+    "persistent_controls": true,
+    "global_lr_grid": [
+      0.3,
+      1.0,
+      3.0
+    ]
+  },
+  "adaptive_server": {
+    "beta1": 0.9,
+    "beta2": 0.99,
+    "tau": 0.001,
+    "bias_correction": false,
+    "initial_moments": 0
+  },
+  "sensitivity": {
+    "alpha": [
+      0.1,
+      0.3,
+      0.5,
+      1.0
+    ],
+    "clients": [
+      5,
+      10,
+      20
+    ],
+    "seeds": "first three primary seeds",
+    "interpretation": "exploratory; no pooling across settings",
+    "empty_partition_rule": "For sensitivity only, reject empty allocation and retry seed+1000003*attempt, at most100 rejections; record actual seed and count; same allocation for every method"
+  },
+  "external": {
+    "dataset": "cic_primary",
+    "seeds": "first five primary seeds",
+    "clients": 5,
+    "alpha": 0.5,
+    "budget": "round(0.6 * candidate_features)",
+    "interpretation": "independent in-dataset confirmation, not transfer"
+  },
+  "expanded_pool": {
+    "per_class_train_cap": 50000,
+    "same_validation_and_test_row_IDs": true,
+    "seeds": "first three primary seeds",
+    "fixed_steps": true,
+    "interpretation": "bounded training-pool sensitivity; not full-data scalability"
+  },
+  "statistics": {
+    "unit": "paired seed, conditional on fixed capture and split",
+    "test": "two-sided exact sign flip",
+    "ci": "20000 paired-seed bootstrap replicates",
+    "primary_extension_family": "rasc versus full for FedProx SCAFFOLD FedAdam FedYogi; Holm correction",
+    "secondary": "descriptive and explicitly exploratory"
+  },
+  "privacy": {
+    "cryptography": false,
+    "dp": false,
+    "poisoning": false
+  },
+  "freeze_rule": "configuration written before tuning and extension test evaluation; this is not a prospective external preregistration",
+  "extended_budget": {
+    "rounds": 200,
+    "seeds": "first three primary seeds",
+    "methods": [
+      "FedAvg-full",
+      "RASC-FedAvg",
+      "FedAdam-full",
+      "RASC-FedAdam"
+    ],
+    "purpose": "training-budget diagnostic, not hyperparameter selection"
+  },
+  "extended_budget_followup": {
+    "seeds": "all ten primary seeds",
+    "trigger": "The initial three-seed 200-round diagnostic reversed the FedAdam mask contrast; all remaining seven duration outcomes were then requested before inspecting them.",
+    "status": "exploratory follow-up extension, not part of the original four-comparison 40-round family",
+    "no_algorithm_or_hyperparameter_changes": true,
+    "executed_initial_three_results_known": true
+  },
+  "reference_outcomes_known_before_optimizer_extension": true
+}

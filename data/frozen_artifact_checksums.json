@@ -1,0 +1,30 @@
+{
+  "bot_expanded.npz": {
+    "size_bytes": 12099217,
+    "sha256": "e3e9d0b02e276b04570d1c66909119f444083b144794ec9e68be584202b65207"
+  },
+  "bot_expanded_split.npz": {
+    "size_bytes": 306039,
+    "sha256": "0633966cd68fe51a3c07caba650c11ee2df85e093ebe9faecbc17a516d1272f3"
+  },
+  "bot_primary.npz": {
+    "size_bytes": 5521266,
+    "sha256": "a669ff6f91e2b19bee76aa31efa5c8f31f6f99ffc2d5c9cd895966841b0b2435"
+  },
+  "bot_primary_split.npz": {
+    "size_bytes": 123355,
+    "sha256": "b862da6595aa6fcb5c7db80b35f354ef57c5fa8f77cff2f2abdfd5f22bb37b97"
+  },
+  "cic_primary.npz": {
+    "size_bytes": 13228171,
+    "sha256": "0457d786b3a906ec070003f384814089786f5d23138b6e07a0fd9ff9d7f0764f"
+  },
+  "cic_primary_raw_feature_sha256.npz": {
+    "size_bytes": 6654960,
+    "sha256": "46034f54fc48ad730f5265c08c986c8d35ee5df14854d55d125b51f6ade3c402"
+  },
+  "cic_primary_split.npz": {
+    "size_bytes": 255915,
+    "sha256": "a03a010570341512173b474233b32f6b2dd9ecd08359e8bfeae2437de2ea81f7"
+  }
+}

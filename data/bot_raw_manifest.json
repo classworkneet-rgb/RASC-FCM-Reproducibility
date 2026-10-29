@@ -1,0 +1,22 @@
+[
+  {
+    "file": "UNSW_2018_IoT_Botnet_Full5pc_1.csv",
+    "bytes": 272335105,
+    "sha256": "3940b549851ac2ce0335f3075c8308b060ecfea8973b104060e5e30867c438e3"
+  },
+  {
+    "file": "UNSW_2018_IoT_Botnet_Full5pc_2.csv",
+    "bytes": 273082424,
+    "sha256": "1f87b8f1528a3357c9fb74d9d728d798f1996441805c668675cb82403c73d168"
+  },
+  {
+    "file": "UNSW_2018_IoT_Botnet_Full5pc_3.csv",
+    "bytes": 282131555,
+    "sha256": "3f05d6827ece70b38d4fd90a9ae3a94a549bc8884fd990be1326f263cc29a747"
+  },
+  {
+    "file": "UNSW_2018_IoT_Botnet_Full5pc_4.csv",
+    "bytes": 189577740,
+    "sha256": "ba7f6b36638246d0fde33a0ba31a0d243bfa700b1e71aebfae7e0346c076a8c9"
+  }
+]

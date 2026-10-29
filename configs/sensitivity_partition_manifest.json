@@ -1,0 +1,272 @@
+[
+  {
+    "alpha": 0.1,
+    "clients": 5,
+    "seed": 104729,
+    "partition_seed": 104729,
+    "rejections": 0,
+    "client_sizes": [
+      7164,
+      10416,
+      21,
+      2901,
+      9886
+    ]
+  },
+  {
+    "alpha": 0.1,
+    "clients": 5,
+    "seed": 130363,
+    "partition_seed": 130363,
+    "rejections": 0,
+    "client_sizes": [
+      26,
+      16142,
+      1801,
+      125,
+      12294
+    ]
+  },
+  {
+    "alpha": 0.1,
+    "clients": 5,
+    "seed": 155921,
+    "partition_seed": 1155924,
+    "rejections": 1,
+    "client_sizes": [
+      4007,
+      1451,
+      6318,
+      2424,
+      16188
+    ]
+  },
+  {
+    "alpha": 0.3,
+    "clients": 5,
+    "seed": 104729,
+    "partition_seed": 104729,
+    "rejections": 0,
+    "client_sizes": [
+      10562,
+      869,
+      9183,
+      566,
+      9208
+    ]
+  },
+  {
+    "alpha": 0.3,
+    "clients": 5,
+    "seed": 130363,
+    "partition_seed": 130363,
+    "rejections": 0,
+    "client_sizes": [
+      832,
+      11689,
+      2789,
+      1363,
+      13715
+    ]
+  },
+  {
+    "alpha": 0.3,
+    "clients": 5,
+    "seed": 155921,
+    "partition_seed": 155921,
+    "rejections": 0,
+    "client_sizes": [
+      6830,
+      10755,
+      6350,
+      1095,
+      5358
+    ]
+  },
+  {
+    "alpha": 1.0,
+    "clients": 5,
+    "seed": 104729,
+    "partition_seed": 104729,
+    "rejections": 0,
+    "client_sizes": [
+      7841,
+      4807,
+      7526,
+      6918,
+      3296
+    ]
+  },
+  {
+    "alpha": 1.0,
+    "clients": 5,
+    "seed": 130363,
+    "partition_seed": 130363,
+    "rejections": 0,
+    "client_sizes": [
+      3592,
+      9259,
+      7028,
+      7666,
+      2843
+    ]
+  },
+  {
+    "alpha": 1.0,
+    "clients": 5,
+    "seed": 155921,
+    "partition_seed": 155921,
+    "rejections": 0,
+    "client_sizes": [
+      6335,
+      7275,
+      6250,
+      7505,
+      3023
+    ]
+  },
+  {
+    "alpha": 0.5,
+    "clients": 10,
+    "seed": 104729,
+    "partition_seed": 104729,
+    "rejections": 0,
+    "client_sizes": [
+      8150,
+      3188,
+      1613,
+      7673,
+      172,
+      385,
+      1479,
+      3760,
+      2614,
+      1354
+    ]
+  },
+  {
+    "alpha": 0.5,
+    "clients": 10,
+    "seed": 130363,
+    "partition_seed": 130363,
+    "rejections": 0,
+    "client_sizes": [
+      2128,
+      2882,
+      3732,
+      416,
+      5838,
+      3396,
+      7100,
+      1303,
+      2019,
+      1574
+    ]
+  },
+  {
+    "alpha": 0.5,
+    "clients": 10,
+    "seed": 155921,
+    "partition_seed": 155921,
+    "rejections": 0,
+    "client_sizes": [
+      2642,
+      3408,
+      2809,
+      3210,
+      4950,
+      243,
+      4151,
+      173,
+      2150,
+      6652
+    ]
+  },
+  {
+    "alpha": 0.5,
+    "clients": 20,
+    "seed": 104729,
+    "partition_seed": 104729,
+    "rejections": 0,
+    "client_sizes": [
+      1609,
+      1111,
+      217,
+      2295,
+      49,
+      2606,
+      1081,
+      2084,
+      2853,
+      251,
+      784,
+      813,
+      727,
+      3839,
+      1526,
+      764,
+      949,
+      722,
+      4107,
+      2001
+    ]
+  },
+  {
+    "alpha": 0.5,
+    "clients": 20,
+    "seed": 130363,
+    "partition_seed": 130363,
+    "rejections": 0,
+    "client_sizes": [
+      45,
+      5860,
+      1565,
+      1557,
+      1876,
+      400,
+      1617,
+      2015,
+      1785,
+      774,
+      468,
+      2309,
+      555,
+      1182,
+      1193,
+      1154,
+      886,
+      3127,
+      1308,
+      712
+    ]
+  },
+  {
+    "alpha": 0.5,
+    "clients": 20,
+    "seed": 155921,
+    "partition_seed": 155921,
+    "rejections": 0,
+    "client_sizes": [
+      522,
+      550,
+      1714,
+      3029,
+      2533,
+      711,
+      3117,
+      2071,
+      961,
+      1418,
+      568,
+      1541,
+      255,
+      2459,
+      1957,
+      1015,
+      390,
+      2230,
+      1870,
+      1477
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "study": "selector_components",
+  "written_utc": "2026-10-29T10:14:36.762447+00:00",
+  "status": "exploratory extension specified after the original benchmark outcomes were known and before any new selector outcome was computed",
+  "dataset": "bot_primary",
+  "clients": 5,
+  "alpha": 0.5,
+  "feature_budget": 22,
+  "rounds": 40,
+  "seeds": [
+    104729,
+    130363,
+    155921,
+    196613,
+    216091,
+    262147,
+    300007,
+    350377,
+    399989,
+    448451
+  ],
+  "algorithms": {
+    "fedavg": {},
+    "fedadam": {
+      "server_lr": 0.1
+    }
+  },
+  "new_masks": {
+    "no_stability": "RASC aggregation with beta=1, retaining capped inverse-support weights and one reserved slot per supported class",
+    "uniform_class_weights": "RASC aggregation with rare_weight_cap=1, retaining bootstrap stability and class reservation",
+    "no_reservation": "Top 22 by the original RASC composite score with no reserved slots; stable feature-index tie breaking",
+    "mutual_information": "Each client computes continuous-feature kNN mutual information (3 neighbors); sample-count-weighted client scores determine the top 22; local constant columns have score zero; jitter seed is seed+2003*client_index",
+    "random": "22 indices without replacement from RNG seed+1618033; no label-dependent selection"
+  },
+  "shared_controls": "Original cohort, training-only transforms, partitions, initialization, RBM pretraining, class-balanced local sampling, 6 steps of 768 records per client per round, learning rates and earliest validation-maximum checkpoint rule were retained; no retuning or optional stopping",
+  "comparators": "Reuse the corresponding 10 original 40-round RASC records for each optimizer; verify every rebuilt full RASC mask and partition digest against those records",
+  "planned_new_test_runs": 100,
+  "analysis": {
+    "unit": "paired seed conditional on the fixed capture and split",
+    "endpoint": "test macro F1",
+    "direction": "original RASC minus each new mask",
+    "contrasts": 10,
+    "test": "two-sided exact sign flip across all 2^10 sign assignments",
+    "ci": "20000 paired-seed bootstrap means using RNG 97031; pointwise 95% intervals",
+    "multiplicity": "Holm over all ten new contrasts, distinct from the unchanged original inference families",
+    "secondary": "Accuracy, per-class recall, mask overlap and best validation round are descriptive"
+  },
+  "input_sha256": {
+    "bot_primary.npz": "a669ff6f91e2b19bee76aa31efa5c8f31f6f99ffc2d5c9cd895966841b0b2435"
+  },
+  "core_source_sha256_before_extension": {
+    "experiment.py": "138c382bd15b66b3d60cc890f860efea9dcdce9f666f7f3d08cfe6cf7f6677fd",
+    "rare_class_consensus.py": "30c5b71a24be28fd95595758253a6b78dab54b138921143d75bcbd27b5fb26ee",
+    "model.py": "e6721422e0d82b7c4e4e1c9214f8459b229eb794f932c19aff8cf27387f5e9d3",
+    "aggregation.py": "bf1bc2b5b577af66f3ed8448a49b7adf1bcc2ea7283e2ee94728942aca751fe2"
+  }
+}

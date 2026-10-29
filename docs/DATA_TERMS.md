@@ -1,0 +1,9 @@
+# Dataset sources, reconstruction and attribution
+
+BoT-IoT: https://research.unsw.edu.au/projects/bot-iot-dataset . The provider grants academic research use, requires separate agreement for commercial use and retains copyright. An unrestricted public redistribution grant for processed feature subsets has not been established. Cite Koroniotis et al., Future Generation Computer Systems 100 (2019), 779–796, https://doi.org/10.1016/j.future.2019.05.041 . The acquisition script uses the public mirror recorded in data/bot_raw_manifest.json and verifies each source file's exact size and SHA-256 hash.
+
+CICIoT2023: https://www.unb.ca/cic/datasets/iotdataset-2023.html . The CIC terms at https://www.unb.ca/cic/datasets/index.html allow redistribution, republication and mirroring with dataset and paper attribution. Cite Neto et al., Sensors 23 (2023), 5941, https://doi.org/10.3390/s23135941 . The evaluated files are the Kaggle mirror derivative identified in data/cic_raw_manifest.json, with the published 46-feature schema. Their 7,845,673 source records are a bounded mirror cohort; byte identity to the complete institutional archive has not been established.
+
+This package contains no original traffic-feature vectors or raw benchmark archives. Obtain source data under the providers' terms and use the acquisition and preparation scripts to reconstruct the evaluated cohorts. The scripts verify frozen hashes and source-row selections. These instructions do not grant additional dataset rights.
+
+BoT-IoT global row IDs concatenate source CSV files 1 through 4 in file order. CIC global row IDs concatenate the acquired train, validation and test files in that order. Selected arrays follow the recorded class and source ordering. A source row ID or simulated client partition is not a physical-device or independent-capture identifier. Training-only preprocessing and recorded residual vector overlaps must be retained when interpreting the results.

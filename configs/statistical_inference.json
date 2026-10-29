@@ -1,0 +1,26 @@
+{
+  "primary_metric": "macro_f1",
+  "paired_bootstrap": {
+    "replicates": 20000,
+    "seed": 97031,
+    "interval": "percentile",
+    "confidence": 0.95
+  },
+  "exact_test": {
+    "type": "two-sided sign flip",
+    "paired_seeds": 10,
+    "enumerated_assignments": 1024,
+    "assumption": "paired differences sign-exchangeable under the null"
+  },
+  "original_holm_family": [
+    "rasc_minus_full_fedprox",
+    "rasc_minus_full_scaffold",
+    "rasc_minus_full_fedadam",
+    "rasc_minus_full_fedyogi"
+  ],
+  "secondary_contrast": "rasc_minus_prevalence_fedavg",
+  "exploratory_sensitivity": "five-way Holm includes secondary contrast plus original four; does not replace original family",
+  "duration": "exploratory, unadjusted and not pooled with primary runs",
+  "external": "five-seed exploratory comparisons",
+  "sensitivity": "three-seed descriptive comparisons"
+}

@@ -1,0 +1,38 @@
+{
+  "bot_primary": {
+    "unique_transformed_vectors": {
+      "train": 29827,
+      "validation": 7218,
+      "test": 29867
+    },
+    "overlap": {
+      "train_validation": 22,
+      "train_test": 0,
+      "validation_test": 0
+    }
+  },
+  "bot_expanded": {
+    "unique_transformed_vectors": {
+      "train": 145033,
+      "validation": 7211,
+      "test": 29863
+    },
+    "overlap": {
+      "train_validation": 39,
+      "train_test": 0,
+      "validation_test": 0
+    }
+  },
+  "cic_primary": {
+    "unique_transformed_vectors": {
+      "train": 64256,
+      "validation": 15899,
+      "test": 59158
+    },
+    "overlap": {
+      "train_validation": 1,
+      "train_test": 0,
+      "validation_test": 0
+    }
+  }
+}

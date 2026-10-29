@@ -1,0 +1,3 @@
+# Edge-IIoTset feasibility
+
+A packet-feature-group split was attempted before external classifier evaluation. The retained candidate view excluded endpoints, ports, payloads, sequence identifiers and checksums. Several attack categories became feature-identical. After removing conflicting-label groups, DDoS UDP/ICMP, Fingerprinting and Port Scanning had no unambiguous vectors and DDoS TCP had one. The 15-class split failed its class-support check, so no Edge-IIoTset classifier result is reported. This is specific to that view and grouping, rather than a general claim about the dataset. CICIoT2023 supplied the evaluated external cohort. The retained feature list and outcome are in data/edge_feasibility_record.json.

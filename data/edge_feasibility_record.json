@@ -1,0 +1,62 @@
+{
+  "dataset": "Edge-IIoTset DNN CSV",
+  "purpose": "Retained feature-group split feasibility record; no classification outcome",
+  "publication_doi": "10.1109/ACCESS.2022.3165809",
+  "raw_rows_scanned": 2219201,
+  "retained_candidate_features": [
+    "arp.opcode",
+    "arp.hw.size",
+    "icmp.unused",
+    "http.content_length",
+    "http.request.method",
+    "http.request.version",
+    "http.response",
+    "tcp.connection.fin",
+    "tcp.connection.rst",
+    "tcp.connection.syn",
+    "tcp.connection.synack",
+    "tcp.flags",
+    "tcp.flags.ack",
+    "tcp.len",
+    "udp.time_delta",
+    "dns.qry.name.len",
+    "dns.qry.qu",
+    "dns.qry.type",
+    "dns.retransmission",
+    "mqtt.conack.flags",
+    "mqtt.conflag.cleansess",
+    "mqtt.conflags",
+    "mqtt.hdrflags",
+    "mqtt.len",
+    "mqtt.msgtype",
+    "mqtt.proto_len",
+    "mqtt.topic_len",
+    "mqtt.ver",
+    "mbtcp.len"
+  ],
+  "categorical_features": [
+    "http.request.method",
+    "http.request.version",
+    "mqtt.conack.flags"
+  ],
+  "exclusion_groups": [
+    "endpoints",
+    "ports",
+    "payloads",
+    "sequence identifiers",
+    "checksums"
+  ],
+  "grouping": "Two fixed-key pandas hashes of the cleaned candidate vector; conflicting-label groups removed; remaining vectors deduplicated; whole groups assigned by first hash modulo 100 to 70/10/20 splits",
+  "attempted_label_count": 15,
+  "class_support_check": "failed",
+  "reported_zero_unambiguous_vector_categories": [
+    "DDoS UDP",
+    "DDoS ICMP",
+    "Fingerprinting",
+    "Port Scanning"
+  ],
+  "reported_DDoS_TCP_unambiguous_vectors": 1,
+  "classifier_evaluated": false,
+  "interpretation": "Specific to the retained candidate view and grouping; does not establish an intrinsic dataset defect.",
+  "alternative_evaluated": "CICIoT2023"
+}

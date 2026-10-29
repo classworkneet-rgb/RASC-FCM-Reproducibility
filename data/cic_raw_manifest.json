@@ -1,0 +1,26 @@
+[
+  {
+    "filename": "test.csv",
+    "source_member": "CICIOT23/test/test.csv",
+    "bytes": 347958926,
+    "sha256": "15aeb1f47a7bd3e3fc394d18d7b196b3640329abaae65d5220df4def6119bfc6",
+    "archive_route": "https://www.kaggle.com/api/v1/datasets/download/himadri07/ciciot2023",
+    "mirror": "Kaggle himadri07/ciciot2023"
+  },
+  {
+    "filename": "train.csv",
+    "source_member": "CICIOT23/train/train.csv",
+    "bytes": 1623446296,
+    "sha256": "ede08dc57e57369fcf35a2b1ea81b81bad0a9a2ad91bc08eceb646bd89117b04",
+    "archive_route": "https://www.kaggle.com/api/v1/datasets/download/himadri07/ciciot2023",
+    "mirror": "Kaggle himadri07/ciciot2023"
+  },
+  {
+    "filename": "validation.csv",
+    "source_member": "CICIOT23/validation/validation.csv",
+    "bytes": 347921865,
+    "sha256": "b13775e87ef64c8dd66c910d4585323f99b1209f2508c75a0a0a8d584caf20d8",
+    "archive_route": "https://www.kaggle.com/api/v1/datasets/download/himadri07/ciciot2023",
+    "mirror": "Kaggle himadri07/ciciot2023"
+  }
+]

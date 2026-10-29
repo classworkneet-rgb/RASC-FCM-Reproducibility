@@ -1,0 +1,162 @@
+{
+  "dataset": "CICIoT2023 public mirror cohort",
+  "files": [
+    {
+      "filename": "test.csv",
+      "source_member": "CICIOT23/test/test.csv",
+      "bytes": 347958926,
+      "sha256": "15aeb1f47a7bd3e3fc394d18d7b196b3640329abaae65d5220df4def6119bfc6",
+      "archive_route": "https://www.kaggle.com/api/v1/datasets/download/himadri07/ciciot2023",
+      "mirror": "Kaggle himadri07/ciciot2023"
+    },
+    {
+      "filename": "train.csv",
+      "source_member": "CICIOT23/train/train.csv",
+      "bytes": 1623446296,
+      "sha256": "ede08dc57e57369fcf35a2b1ea81b81bad0a9a2ad91bc08eceb646bd89117b04",
+      "archive_route": "https://www.kaggle.com/api/v1/datasets/download/himadri07/ciciot2023",
+      "mirror": "Kaggle himadri07/ciciot2023"
+    },
+    {
+      "filename": "validation.csv",
+      "source_member": "CICIOT23/validation/validation.csv",
+      "bytes": 347921865,
+      "sha256": "b13775e87ef64c8dd66c910d4585323f99b1209f2508c75a0a0a8d584caf20d8",
+      "archive_route": "https://www.kaggle.com/api/v1/datasets/download/himadri07/ciciot2023",
+      "mirror": "Kaggle himadri07/ciciot2023"
+    }
+  ],
+  "features": [
+    "flow_duration",
+    "Header_Length",
+    "Protocol Type",
+    "Duration",
+    "Rate",
+    "Srate",
+    "Drate",
+    "fin_flag_number",
+    "syn_flag_number",
+    "rst_flag_number",
+    "psh_flag_number",
+    "ack_flag_number",
+    "ece_flag_number",
+    "cwr_flag_number",
+    "ack_count",
+    "syn_count",
+    "fin_count",
+    "urg_count",
+    "rst_count",
+    "HTTP",
+    "HTTPS",
+    "DNS",
+    "Telnet",
+    "SMTP",
+    "SSH",
+    "IRC",
+    "TCP",
+    "UDP",
+    "DHCP",
+    "ARP",
+    "ICMP",
+    "IPv",
+    "LLC",
+    "Tot sum",
+    "Min",
+    "Max",
+    "AVG",
+    "Std",
+    "Tot size",
+    "IAT",
+    "Number",
+    "Magnitue",
+    "Radius",
+    "Covariance",
+    "Variance",
+    "Weight"
+  ],
+  "classes": [
+    "Benign",
+    "DDoS",
+    "DoS",
+    "Mirai",
+    "Recon",
+    "Spoofing",
+    "Web",
+    "BruteForce"
+  ],
+  "acquired_rows": 7845673,
+  "raw_split_class_counts": {
+    "train": {
+      "Benign": 129538,
+      "DDoS": 3998500,
+      "DoS": 950656,
+      "Mirai": 309768,
+      "Recon": 41617,
+      "Spoofing": 57530,
+      "Web": 2821,
+      "BruteForce": 1541
+    },
+    "validation": {
+      "Benign": 27519,
+      "DDoS": 857523,
+      "DoS": 203450,
+      "Mirai": 66091,
+      "Recon": 9015,
+      "Spoofing": 12306,
+      "Web": 657,
+      "BruteForce": 290
+    },
+    "test": {
+      "Benign": 27709,
+      "DDoS": 855981,
+      "DoS": 204245,
+      "Mirai": 66749,
+      "Recon": 8812,
+      "Spoofing": 12410,
+      "Web": 626,
+      "BruteForce": 319
+    }
+  },
+  "conflicting_vector_label_rows_removed": 0,
+  "exact_vector_duplicates_removed": 275259,
+  "selected_split_class_counts": {
+    "train": {
+      "Benign": 10000,
+      "DDoS": 10000,
+      "DoS": 10000,
+      "Mirai": 10000,
+      "Recon": 10000,
+      "Spoofing": 10000,
+      "Web": 2768,
+      "BruteForce": 1488
+    },
+    "validation": {
+      "Benign": 2500,
+      "DDoS": 2500,
+      "DoS": 2500,
+      "Mirai": 2500,
+      "Recon": 2500,
+      "Spoofing": 2500,
+      "Web": 624,
+      "BruteForce": 275
+    },
+    "test": {
+      "Benign": 10000,
+      "DDoS": 10000,
+      "DoS": 10000,
+      "Mirai": 10000,
+      "Recon": 8273,
+      "Spoofing": 10000,
+      "Web": 590,
+      "BruteForce": 295
+    }
+  },
+  "split": "public mirror train/validation/test membership; global exact numeric vector deduplication; class caps 10000/2500/10000",
+  "chronological": false,
+  "capture_independent": false,
+  "candidate_budget": 28,
+  "source_authority": "https://www.unb.ca/cic/datasets/iotdataset-2023.html",
+  "publication_doi": "10.3390/s23135941",
+  "raw_original_archive_byte_identity_established": false,
+  "evidence_boundary": "hash-verified public-mirror derivative; not all official 46.7 million records"
+}
